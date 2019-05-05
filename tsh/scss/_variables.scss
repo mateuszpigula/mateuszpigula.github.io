@@ -1,0 +1,16 @@
+$background-color: #e2e1e1;
+$container-radius: 4px;
+$text-color-title: #2288b7;
+$text-color-light: #fdfdfd;
+$text-color-table: #555555;
+$primary-color: red;
+$search-radius: 3px;
+
+$breakpoints: (
+    "phone":        400px,
+    "phablet":      560px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);

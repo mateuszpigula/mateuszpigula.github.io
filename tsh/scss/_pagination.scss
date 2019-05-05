@@ -1,0 +1,41 @@
+.pagination {
+  padding: 0;
+  @include flex-center();
+
+  li {
+    display: inline;
+    background: linear-gradient(to bottom, #f9f9f9 0%,#eaeaea 100%);
+    border: 1px solid #717171;
+    border-radius: 3px;
+    margin-right: 5px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 1px 0px 1px rgba(255, 255, 255, 1) inset; 
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      font-size: 12px;
+      display: block;
+      color: #666666;
+      text-shadow: 0px 1px 0px #fff;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+    }
+
+    &.active {
+      background: linear-gradient(to bottom, #5f5f5f 0%,#5f5f5f 100%);
+      box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 1), 0px 1px 5px 0px rgba(0, 0, 0, 0.4) inset; 
+      
+      a {
+        color: $text-color-light;
+        text-shadow: 0px 1px 0px #000; 
+      }
+    }
+  }
+}

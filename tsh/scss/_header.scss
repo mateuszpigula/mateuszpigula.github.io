@@ -1,0 +1,23 @@
+.header {
+  &--title {
+    color: $text-color-title;
+    text-align: center;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  &--subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+hr {
+  display: block;
+  height: 1px;
+  background: #e0e0e0;
+  border: none;
+  margin: 1em 0;
+}

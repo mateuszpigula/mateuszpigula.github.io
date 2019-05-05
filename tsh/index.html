@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TSH - Web Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+  <div class="container">
+    <header class="header">
+      <h1 class="header--title">Where your money goes</h1>
+      <h2 class="header--subtitle">Payments made by Chichester District Council to individual suppliers with a value over £500 made within October.</h2>
+      <hr>
+    </header>
+
+    <div class="search">
+      <form action="" method="get" class="search-bar">
+        <input type="text" name="name" id="name" class="search--input" placeholder="Search suppliers">
+        <div class="select-container">
+          <select id="rating" name="rating">
+            <option selected value="">Select pound rating</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <input type="reset" class="btn btn--secondary" value="Reset">
+        <input type="submit" class="btn btn--primary" value="Search">
+      </form>
+    </div>
+
+    <main class="table">
+      <table>
+        <thead>
+            <tr>
+                <th>Supplier</th>
+                <th>Pound rating</th>
+                <th>Reference</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </main>
+    
+    <nav aria-label="pagination">
+      <ul class="pagination">
+          <li><a href="#0">&#10094;</a></li>
+          <li class="active"><a href="#1">1</a></li>
+          <li><a href="#2">2</a></li>
+          <li><a href="#3">&#10095;</a></li>
+        </ul>
+    </nav>  
+
+  </div>
+
+
+  <div class="modal" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content container">
+      <div class="modal-content__half modal-content__half--img">
+        <img src="./img/data_report.svg" alt="Data report image">
+      </div>
+      <div class="modal-content__half">
+        <div class="modal-header">
+          <h2 class="modal-title"></h2>
+          <button type="button" class="close-modal close-modal--times" data-dismiss="modal" aria-label="Close">&times</button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <h5>Rating:</h5>
+            <div id="modal--rating"></div>
+          </div>
+          <div>
+            <h5>Reference:</h5>
+            <p id="modal--reference"></p>
+          </div>
+          <div>
+            <h5>Value:</h5>
+            <p id="modal--value"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close-modal-buton" class="btn btn--primary btn--close close-modal" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

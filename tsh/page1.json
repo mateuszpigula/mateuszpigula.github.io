@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Lorem ipsum",
+        "rating": 3,
+        "reference": 153,
+        "value": 19963
+    },
+    {
+        "name": "dolor sit amet",
+        "rating": 3,
+        "reference": 122,
+        "value": 249
+    },
+    {
+        "name": "consectetur adipiscing elit",
+        "rating": 2,
+        "reference": 91,
+        "value": 852
+    },
+    {
+        "name": "Ut molestie lacinia",
+        "rating": 5,
+        "reference": 3121,
+        "value": 15244
+    },
+    {
+        "name": "ultrices enim auctor",
+        "rating": 1,
+        "reference": 853,
+        "value": 14352
+    }
+]

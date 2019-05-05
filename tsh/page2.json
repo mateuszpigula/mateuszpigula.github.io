@@ -1,0 +1,32 @@
+[
+    {
+        "name": "sodales eros est",
+        "rating": 1,
+        "reference": 4326,
+        "value": 2634
+    },
+    {
+        "name": "consectetur libero",
+        "rating": 3,
+        "reference": 62,
+        "value": 734
+    },
+    {
+        "name": "vel posuere neque",
+        "rating": 1,
+        "reference": 23981,
+        "value": 36
+    },
+    {
+        "name": "maximus felis sed",
+        "rating": 2,
+        "reference": 523,
+        "value": 472
+    },
+    {
+        "name": "venenatis dolor malesuada sed",
+        "rating": 4,
+        "reference": 352,
+        "value": 82436
+    }
+]

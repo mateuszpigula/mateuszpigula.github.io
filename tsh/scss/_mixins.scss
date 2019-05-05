@@ -1,0 +1,21 @@
+@mixin transition($for: all, $time: 0.3s, $type: ease) {
+  transition: $for $time $type;
+}
+
+@mixin flex-center($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
